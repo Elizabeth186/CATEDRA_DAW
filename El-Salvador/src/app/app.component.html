@@ -6,11 +6,11 @@
   <li class="nav-item">
     <a class="nav-link" id="ini"aria-current="page" routerLink="inicio">INICIO</a>
   </li>
-  <li class="nav-item dropdown">
+  <li class="nav-item dropdown" ngFor="let data of dapartamento">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ZONA CENTRAL</a>
     <ul class="dropdown-menu">
-      
-      <li><a class="dropdown-item" routerLink="s">ZONA CENTRAL</a></li>
+
+      <li><a class="dropdown-item" routerLink="sansalvador">San Salvador</a></li>
       <li><a class="dropdown-item" routerLink="">ZONA OCCIDENT</a></li>
       <li><a class="dropdown-item" href="#">ZONA ORIENTAL</a></li>
       <li><hr class="dropdown-divider"></li>

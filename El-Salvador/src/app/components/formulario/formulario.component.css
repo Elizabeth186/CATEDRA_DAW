@@ -15,6 +15,7 @@ label{
      margin-top: 1%;
     
  }
+
 #name{
    
     width: 70%;
@@ -65,3 +66,8 @@ label{
 .Error { display: none; font-size: 0.8em; color: red;}
 .Error.visible {display: block;}
 input.invalid {border-color: red;}
+
+.btn-block{
+    margin-top: 3%;
+    margin-left: 3%;
+}
