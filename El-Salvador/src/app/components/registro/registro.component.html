@@ -1,115 +1,29 @@
-<!-- <div class="container" id="advanced-search-form">
-        <h2>Registro de Usuario</h2>
-    <form>
-        <div class="form-group">
-            <label for="first-name">Nombre:</label>
-            <input type="text" class="form-control" placeholder="Nombre" id="nombre">
-        </div>
-        <div class="form-group">
-            <label for="last-name">Apellido:</label>
-            <input type="text" class="form-control" placeholder="Apellido" id="apellido">
-        </div>
-        <div class="form-group">
-            <label for="country">Pais:</label>
-            <input type="text" class="form-control" placeholder="Pais" id="country">
-        </div>
-        <div class="form-group">
-            <label for="number">Numero de Telefono:</label>
-            <input type="text" class="form-control" placeholder="Numero Telefono" id="number">
-        </div>
-        <div class="form-group">
-            <label for="age">Edad:</label>
-            <input type="text" class="form-control" placeholder="Edad" id="age">
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" placeholder="Email" id="email">
-        </div>
-              
-        <div class="form-group">
-            <label>Genero:</label>
-            <div class="radio">
-                <label class="radio-inline">
-                    <input type="radio" name="optradio">Feminino</label>
-                <label class="radio-inline">
-                    <input type="radio" name="optradio">Masculino</label>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-        <button type="submit" class="btn btn-info btn-lg btn-responsive" id="search"> <span class="glyphicon glyphicon-search"></span> Registrar</button>
-    </form>
-</div> -->
 
-<form id="basic-form" action="" method="post">
-    <p>
-      <label for="name">Name <span>(required, at least 3 characters)</span></label>
-      <input id="name" name="name">
-    </p>
-  <p>
-      <label for="age">Your Age <span>(minimum 18)</span></label>
-      <input id="age" name="age">
-    </p>
-    <p>
-      <label for="email">E-Mail <span>(required)</span></label>
-      <input id="email" name="email">
-    </p>
-  <p>
-    <label for="weight">Weight <span>(required if age over 50)</span></label>
-    <input id="weight" name="weight">
-    </p>
-    <p>
-      <input class="submit" type="submit" value="SUBMIT">
-    </p>
-</form>
+<div class="container">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
-<script>
+  <h2 class="title">Registrarme</h2>
 
-$(document).ready(function() {
-    $("#basic-form").validate({
-      rules: {
-        name : {
-          required: true,
-          minlength: 3
-        },
-        age: {
-          required: true,
-          number: true,
-          min: 18
-        },
-        email: {
-          required: true,
-          email: true
-        },
-        weight: {
-          required: {
-            depends: function(elem) {
-              return $("#age").val() > 50
-            }
-          },
-          number: true,
-          min: 0
-        }
-      },
-      messages : {
-        name: {
-          minlength: "Name should be at least 3 characters"
-        },
-        age: {
-          required: "Please enter your age",
-          number: "Please enter your age as a numerical value",
-          min: "You must be at least 18 years old"
-        },
-        email: {
-          email: "The email should be in the format: abc@domain.tld"
-        },
-        weight: {
-          required: "People with age over 50 have to enter their weight",
-          number: "Please enter your weight as a numerical value"
-        }
-      }
-    });
-  });</script>
+  <form action="#" name="registration">
 
+    <label for="firstname">Nombre</label>
+
+    <input type="text" name="firstname" id="firstname" placeholder="Elmer">
+
+    <label for="lastname">Apellidos</label>
+
+    <input type="text" name="lastname" id="lastname" placeholder="Garcia">
+
+    <label for="email">Email</label>
+
+    <input type="email" name="email" id="email" placeholder="nombre@correo.com">
+
+    <label for="password">Contraseña</label>
+
+    <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
+
+    <button type="submit">Registrarme</button>
+
+  </form>
+
+</div>
 

@@ -1,131 +1,67 @@
-/*#advanced-search-form{
-    background-color: #fff;
-    max-width: 800px;
-    margin: 50px auto 0;
-    padding: 40px;
-    color: #858b8e;
-    box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#advanced-search-form h2{
-    padding-bottom: 20px;
-    margin: 10px 20px;
-    font-size: 24px;
+body {
+  font-family: "Open Sans";
+  font-size: 14px;
 }
 
-#advanced-search-form hr{
-    margin-top: 38px;
-    margin-bottom: 54px;
-    margin-left:3px;
-    border: 1px solid #cccccc;
+.container {
+  width: 500px;
+  margin: 25px auto;
+}
+
+form {
+
+  padding: 20px;
+
+  background: #2c3e50;
+
+  color: #fff;
+
+  -moz-border-radius: 4px;
+
+  -webkit-border-radius: 4px;
+
+  border-radius: 4px;
 
 }
 
-#advanced-search-form .form-group{
-	margin-bottom: 20px;
-    margin-left:20px;
-	width: 30%;
-    float:left;
-    text-align: left;
+form label,
+form input,form button {
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+
 }
 
-#advanced-search-form .form-control{
-    padding: 12px 20px;
-    height: auto;
-    border-radius: 2px;
+form input {
+  height: 25px;
+  line-height: 25px;
+  background: #fff;
+  color: #000;
+  padding: 0 6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
 }
 
-#advanced-search-form .radio-inline{
-    margin-left: 10px;
-    margin-right: 10px;
+form button {
+  height: 30px;
+  line-height: 30px;
+  background: #e67e22;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
-#advanced-search-form .gender{
-    width: 30%;
-    margin-top: 30px;
-    padding-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+form .error {
+  color: #ff0000;
 }
 
-#advanced-search-form .btn{
-    width: 46%;
-    margin: 20px auto 0;
-    display: block;
-    outline: none;
-}
-
-@media screen and (max-width: 800px){
-    #advanced-search-form .form-group{
-        width: 45%;
-    }
-
-    #advanced-search-form{
-        margin-top: 0;
-    }
-}
-
-@media screen and (max-width: 560px){
-    #advanced-search-form .form-group{
-        width: 100%;
-        margin-left: 0;
-    }
-
-    #advanced-search-form h2{
-        text-align: center;
-    }
-}
-*/
-
-form, p {
-    margin: 20px;
-  }
-  
-  p.note {
-    font-size: 1rem;
-    color: red;
-  }
-  
-  input, textarea {
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 4px;
-    font-family: 'Lato';
-    width: 300px;
-    margin-top: 10px;
-  }
-  
-  label {
-    width: 300px;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 20px;
-  }
-  
-  label span {
-    font-size: 1rem;
-  }
-  
-  label.error {
-      color: red;
-      font-size: 1rem;
-      display: block;
-      margin-top: 5px;
-  }
-  
-  input.error, textarea.error {
-      border: 1px dashed red;
-      font-weight: 300;
-      color: red;
-  }
-  
-  [type="submit"], [type="reset"], button, html [type="button"] {
-      margin-left: 0;
-      border-radius: 0;
-      background: black;
-      color: white;
-      border: none;
-      font-weight: 300;
-      padding: 10px 0;
-      line-height: 1;
-  }
