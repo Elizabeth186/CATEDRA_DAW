@@ -68,6 +68,8 @@ expconsulta = /^[A-z\s\S]{0,150}$/
     
 }  
 
+//Christian.
+
 var myArrayObject = [];
 var divState;
 function init() {

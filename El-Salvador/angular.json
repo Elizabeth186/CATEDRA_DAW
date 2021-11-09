@@ -31,8 +31,10 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/app/components/formulario/formulario.js"
+              "src/app/components/formulario/formulario.js",
+              "src/app/components/registro/validaciones.js"
             ]
+            
           },
           "configurations": {
             "production": {

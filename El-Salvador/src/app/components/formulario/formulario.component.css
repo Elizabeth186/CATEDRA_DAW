@@ -13,6 +13,7 @@ label{
  }
  #form{
      margin-top: 1%;
+     text-align: center;
     
  }
 
@@ -70,4 +71,7 @@ input.invalid {border-color: red;}
 .btn-block{
     margin-top: 3%;
     margin-left: 3%;
+}
+div{
+    margin-bottom: 2%;
 }
